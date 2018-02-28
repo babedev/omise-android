@@ -10,6 +10,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -33,4 +34,9 @@ dependencies {
     compile project(':sdk')
     compile 'io.card:android-sdk:5.4.0'
     // compile 'co.omise:omise-android:2.3.+'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test:rules:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.1'
 }
